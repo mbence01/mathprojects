@@ -1,7 +1,4 @@
 # exceptions
-from os import TMP_MAX
-
-
 class VariableNameError(Exception):
     def __init__(self, var_name):
         super().__init__(f'Invalid variable name given. Name must be a one length character from ABC. Given name: {var_name} ({type(var_name)})')
